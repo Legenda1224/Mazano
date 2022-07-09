@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/logo.png" type="img/png">
+    <title>Mazano</title>
+</head>
+<body>
+    
+    <div class="burger-menu">
+        <a href="" class="burger-menu_button">
+          <span class="burger-menu_lines"></span>
+        </a>
+        <nav class="burger-menu_nav">
+          <a href="index.php" class="burger-menu_link">Главная</a>
+          <a href="indexdostavka.php" class="burger-menu_link">Доставка</a>
+          <a href="indexoplata.php" class="burger-menu_link">Оплата</a>
+          <a href="indexgarantiya.php" class="burger-menu_link">Гарантия</a>
+          <a href="indexcontact.php" class="burger-menu_link">Контакты</a>
+          <div class="icon3">
+            <i class='bx bx-cart' id="cart-icon"></i>
+        </div>
+        </nav>
+        <div class="burger-menu_overlay"></div>
+    </div>
+
+
+    <header>
+        <div class="header">
+            <div class="header-flex">
+                <div class="logo">
+                    <h2>Mazano.</h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">FRESS FOOD</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BLOG</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <i class='bx bx-search-alt-2'></i>
+                    <i class='bx bx-user'></i>
+                    <i class='bx bx-cart' id="cart-icon"></i>
+                    <label class="switch">
+                        <input type="checkbox" onclick="active()">
+                        <span class="slider"></span>
+                    </label>
+                    <script>
+                        function active(){
+                            let dark = document.body;
+                            dark.classList.toggle("dark");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="content">
+            <div class="content-text">
+                <p>Lets' solve hunger together with monthly Offer</p>
+                <h3>ORGANIC<br> PASTA & SAUSE</h3>
+                <span>SHOP NOW</span>
+            </div>
+        </div>
+        <div class="flex-icon">
+        <div>
+            <span class="radius_1"><i class='bx bx-left-arrow-alt'></i></span>
+        </div>
+        <div>
+            <span class="radius_2"><i class='bx bx-right-arrow-alt' ></i></span>
+        </div>
+        </div>
+    </div>
+
+    <div class="feature-product">
+        <div class="content-feature-product">
+            <div class="flex-feature-product">
+                    <h3>FEATURED PRODUCT</h3>
+                <div class="menu-feature">
+                    <p>MEAT</p>
+                    <p>FISH & SEAFOOD</p>
+                    <p>VEGETABLES & SIDE DISHES</p>
+                    <p>BREAD & DAIRY</p>
+                </div>
+                <span class="knopka">SHOW ALL ITEMS</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <div class="card-max">
+            <div class="flex-cart">
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <img src="img/card-1.png" alt="">
+                    </div>
+                    <p>COLOURFUL PRINTED SCARF</p>
+                    <span>$85.00</span>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <div class="icon-cart-flex">
+                            <div class="icon-cart">
+                                <i class='bx bx-cart-alt'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-repost'></i>
+                            </div>
+                        </div>
+                        <img src="img/card-2.png" alt="">
+                    </div>
+                    <p>COLOURFUL PRINTED SCARF</p>
+                    <span>$85.00</span>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <div class="icon-cart-flex">
+                            <div class="icon-cart">
+                                <i class='bx bx-cart-alt'></i>
+                                <i class='bx bx-heart'></i>
+                                <i class='bx bx-repost'></i>
+                            </div>
+                        </div>
+                        <img src="img/card-3.png" alt="">
+                        <p>COLOURFUL PRINTED SCARF</p>
+                        <span>$85.00</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <img src="img/card-3.png" alt="">
+                        <p>COLOURFUL PRINTED SCARF</p>
+                        <span>$85.00</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <img src="img/card-1.png" alt="">
+                        <p>COLOURFUL PRINTED SCARF</p>
+                        <span>$85.00</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <img src="img/card-2.png" alt="">
+                    </div>
+                    <p>COLOURFUL PRINTED SCARF</p>
+                    <span>$85.00</span>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <img src="img/card-3.png" alt="">
+                        <p>COLOURFUL PRINTED SCARF</p>
+                        <span>$85.00</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="icon-cart-flex">
+                        <div class="icon-cart">
+                            <i class='bx bx-cart-alt'></i>
+                            <i class='bx bx-heart'></i>
+                            <i class='bx bx-repost'></i>
+                        </div>
+                    </div>
+                    <div class="cart-img">
+                        <img src="img/card-3.png" alt="">
+                        <p>COLOURFUL PRINTED SCARF</p>
+                        <span>$85.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot-menu">
+        <div class="hot-menu-flex">
+            <div class="block-white">
+                <p>HOT MENU</p>
+                <h3>ELAD APELSIN & FLADER</h3>
+                <p class="p">Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi<br> ut aliquip ex ea commodo consequat</p>
+                <span>ORDER NOW</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="flex-blog">
+            <h3>FROM OUT BLOG</h3>
+            <div class="strelki"> 
+                <span class="radius_4"><i class='bx bx-left-arrow-alt' ></i></span>
+                <span class="radius_3"><i class='bx bx-right-arrow-alt'></i></span>
+            </div>
+        </div>
+        <div class="cart-2-img">
+            <div class="cart-img-food">
+                <img src="./img/Screenshot 2022-02-20 160819.png" alt="">
+                <h3>FRESH FOOD FOR YOUR LIVE</h3>
+                <p>Cristiana Doe / 18 comments</p>
+                <h4><u>READMOR</u></h4>
+            </div>
+                
+            <div class="cart-img-food">
+                <img src="./img/Screenshot 2022-02-20 160819.png" alt="">
+                <h3>FRESH FOOD FOR YOUR LIVE</h3>
+                <p>Cristiana Doe / 18 comments</p>
+                <h4><u>READMOR</u></h4>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="d_flex">
+                <div class="pokup">
+                    <h3>
+                    Mazano.
+                    </h3>
+                    <p>
+                        Empor incididunt ut labore et dolore magna aliqua.<br>
+                        Ut enim ad minim veniam, quis nostrud exercitation<br>
+                        ullamco laboris
+                    </p>
+                    <p>
+                        (123) 456 7890
+                    </p>
+                    <p>
+                        Suport@mazano.ru
+                    </p>
+                </div>
+                <div class="info">
+                    <h3>
+                    CATEGORIES
+                    </h3>
+                    <p>
+                    <a href="indexonas.php">Life Style</a><br>
+                    <a href="indexcontact.php">Lights & Lamps</a><br>
+                    <a href="indexonas.php">Home Decor</a><br>
+                    <a href="indexcontact.php">Trending 2016</a><br>
+                    <a href="indexonas.php">Exterior</a><br>
+                    </p>
+                </div>
+                <div class="info-2">
+                    <h3>
+                    INFORMATION
+                    </h3>
+                    <p>
+                    <a href="indexonas.php">Special</a><br>
+                    <a href="indexcontact.php">New Products</a><br>
+                    <a href="indexonas.php">Best Sellers</a><br>
+                    <a href="indexcontact.php">Our Stores</a><br>
+                    <a href="indexonas.php">Contact</a><br>
+                    </p>
+                </div>
+                <div class="info-3">
+                    <h3>
+                    NEWSLETTER
+                    </h3>
+                    <span class="sign">Sign up for our newsletter & promotions</span><br>
+                    <input type="email" name="email" placeholder="Email here">
+                    <input type="button" value="SUBSCRIBE">
+                    <h3>
+                        WE ACCEPT
+                    </h3>
+                </div>
+            </div>
+            <div class="pod_footer">
+                <p>@2016 Mazano Frech food<br></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
